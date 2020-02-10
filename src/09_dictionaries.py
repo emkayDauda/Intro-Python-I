@@ -58,3 +58,6 @@ next(waypoint for waypoint in waypoints if waypoint['name'] == 'a place')['name'
 print(next(waypoint for waypoint in waypoints if waypoint['lon'] == -130))
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for waypoint in waypoints:
+    for (_, value) in waypoint.items():
+        print(value)
